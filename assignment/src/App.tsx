@@ -6,10 +6,12 @@ import Projects from './pages/Projects'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
 import Dashboard from './pages/Dashboard'
+import { ThemeProvider } from './components/Theme/theme-provider'
 
 function App() {
 
   return (
+    <ThemeProvider>
     <BrowserRouter>
 
       <Layout>
@@ -23,7 +25,7 @@ function App() {
 </Routes>
   </Layout>
 </BrowserRouter>
-
+</ThemeProvider>
   )
 }
 
