@@ -1,24 +1,24 @@
 import { SidebarInset, SidebarProvider } from "@/components/components/ui/sidebar"
-import { SiteHeader } from "@/components/components/site-header"
 import { AppSidebar } from "@/components/components/app-sidebar"
-
-
+import { Topbar } from "./Topbar"
+import { Separator } from "@radix-ui/react-dropdown-menu"
+import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 
 
+  return (
+    <>
+    <SidebarProvider >
+    <AppSidebar variant="inset"  />
+    <SidebarInset >
+                <Topbar />
+      <div className="flex flex-col gap-4 px-4 pt-16 pb-4">
 
-return(   
-    <SidebarProvider>
-              <AppSidebar variant="inset" />
-              <SidebarInset>
-                        <SiteHeader />
-                        {children}
-                
-</SidebarInset>
+        {children}
+      </div>
+    </SidebarInset>
 </SidebarProvider>
-)
-
-
-
+</>
+  )
 }

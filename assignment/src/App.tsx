@@ -3,6 +3,11 @@ import './App.css'
 import Page from './app/dashboard/Page'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
+import HomePage from './pages/HomePage'
+import Projects from './pages/Projects'
+import Profile from './pages/Profile'
+import Settings from './pages/Settings'
+import Dashboard from './pages/Dashboard'
 
 function App() {
 
@@ -12,11 +17,11 @@ function App() {
       <Layout>
 
 <Routes>
-       <Route path="/" element={<Page />} />
-       <Route path="/home" element={<Page />} />
-       <Route path="/projects" element={<Page />} />
-       <Route path="/profile" element={<Page />} />
-       <Route path="/settings" element={<Page />} />
+       <Route path="/dashboard" element={<Dashboard/>} />
+       <Route path="/home" element={<HomePage />} />
+       <Route path="/projects" element={<Projects />} />
+       <Route path="/profile" element={<Profile />} />
+       <Route path="/settings" element={<Settings />} />
 </Routes>
   </Layout>
 </BrowserRouter>
