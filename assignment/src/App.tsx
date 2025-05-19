@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import './App.css'
-import Page from './app/dashboard/Page'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import HomePage from './pages/HomePage'

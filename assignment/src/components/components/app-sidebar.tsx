@@ -3,30 +3,24 @@ import { House,Settings,User,FolderOpenDot,LayoutDashboard } from 'lucide-react'
 
 import {
   IconCamera,
-  IconChartBar,
-  IconDashboard,
   IconDatabase,
   IconFileAi,
   IconFileDescription,
   IconFileWord,
-  IconFolder,
   IconHelp,
   IconInnerShadowTop,
-  IconListDetails,
   IconReport,
   IconSearch,
   IconSettings,
-  IconUsers,
 } from "@tabler/icons-react"
 
-import { NavDocuments } from "@/components/components/nav-documents"
+// import { NavDocuments } from "@/components/components/nav-documents"
 import { NavMain } from "@/components/components/nav-main"
-import { NavSecondary } from "@/components/components/nav-secondary"
-import { NavUser } from "@/components/components/nav-user"
+// import { NavSecondary } from "@/components/components/nav-secondary"
+// import { NavUser } from "@/components/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
